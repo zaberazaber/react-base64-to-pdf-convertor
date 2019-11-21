@@ -1,11 +1,9 @@
 import React from 'react';
 import axios from 'axios';
+import './app.css'
 
 class App extends React.Component {
 
-  /**
-   * Dynamically inject anchor tag into document to open output.pdf
-   */
   downloadFile = (url) =>  {
     let a = document.createElement('a')
     a.href = url
@@ -16,10 +14,6 @@ class App extends React.Component {
     document.body.removeChild(a)
   }
 
-  /**
-   * API call to server to convert the base64 into pdf 
-   * and get the response url to set on the anchor tag
-   */
   handleClick = (e) => {
     e.preventDefault();
     e.stopPropagation();
@@ -31,12 +25,15 @@ class App extends React.Component {
   }
 
   render() {
-    return (<div>
-      <button onClick={this.handleClick}>
+    return (<div className="position">
+      <a  className = "button" onClick={this.handleClick} >
         Click me
-      </button>
+      </a >
     </div>)
   }
+
+
+
 }
 
 export default App;

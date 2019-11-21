@@ -1,0 +1,26 @@
+
+.button {
+   background:rgba(47, 51, 50, 0.842);
+   padding: 5.5px 11px;
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+   color: #ffffff;
+   font-size: 14px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   background: #20181b;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+   .position{
+       text-align: center;
+       padding-top:50px;
+   }
